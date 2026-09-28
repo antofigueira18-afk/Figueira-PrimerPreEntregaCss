@@ -1,45 +1,69 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --color-fondo:#F0F6F1;
     --color-secundario:#4D7A48;
-
-
-
-
-
 }
 
-/* El color secundario lo voy a cambiar, ese es el color del logo que ya tengo hecho */
-
-/* ===== Clase de los items de la lista ===== */
-
-.contenidos li {
-    font-size: 14px;
-    color: #A3C597;
-} 
-
-/* Propiedades y valores del body  */
 body {
-    background-color: var(--color-fondo);
-    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1.25rem;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
 }
 
-/* Propiedades y valores de h1 */
-h1 {font-weight: 900;
-    font-size: 40px;
-    color: var(--color-secundario);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.logo {
+    width: 7rem;
+    height: auto;
+    
 }
 
-/* Propiedades y valores de h2 */
-h2 {font-weight: 600;
-    font-size: 24px;
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+    width: 100%;
 }
 
-/* Propiedades y valores de ul */
-ul {font-weight: 600;
-    font-size: 18px;
+/* Main */
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
-/* Propiedades y valores de p */
-p {font-weight: 200;
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
+
+h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+p {
+    font-size: 0.9rem;
+    width: 80%;
+    text-align: justify;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+
