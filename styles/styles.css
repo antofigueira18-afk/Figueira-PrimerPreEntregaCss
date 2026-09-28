@@ -1,0 +1,45 @@
+:root {
+    --color-fondo:#F0F6F1;
+    --color-secundario:#4D7A48;
+
+
+
+
+
+}
+
+/* El color secundario lo voy a cambiar, ese es el color del logo que ya tengo hecho */
+
+/* ===== Clase de los items de la lista ===== */
+
+.contenidos li {
+    font-size: 14px;
+    color: #A3C597;
+} 
+
+/* Propiedades y valores del body  */
+body {
+    background-color: var(--color-fondo);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Propiedades y valores de h1 */
+h1 {font-weight: 900;
+    font-size: 40px;
+    color: var(--color-secundario);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Propiedades y valores de h2 */
+h2 {font-weight: 600;
+    font-size: 24px;
+}
+
+/* Propiedades y valores de ul */
+ul {font-weight: 600;
+    font-size: 18px;
+}
+
+/* Propiedades y valores de p */
+p {font-weight: 200;
+}
