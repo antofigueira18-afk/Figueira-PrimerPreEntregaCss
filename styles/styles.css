@@ -4,9 +4,11 @@
 }
 
 :root {
-    --color-fondo:#F0F6F1;
+    --color-fondo: #A8C3A4;
     --color-secundario:#4D7A48;
 }
+
+/* Voy a cambiar los colotes de mi paleta y logo */
 
 body {
     margin: 0;
@@ -19,8 +21,9 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0.6rem 1.25rem;
-    background-color: #f8f8f8;
+    background-color: var(--color-fondo);
     font-family: Arial, sans-serif;
+    color: var(--color-secundario);
 }
 
 .logo {
@@ -29,8 +32,16 @@ header {
     
 }
 
+.menu-navegacion ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+}
+
 h1 {
     font-size: 2rem;
+    color: var(--color-secundario);
     margin: 0;
     text-align: center;
     line-height: 1.5;
