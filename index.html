@@ -1,54 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
     <title>Instituto de Formacion Profesional San Isidro</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+
 </head>
 <body>
-   <!-- Título principal -->
-    <H1>IFPSI</H1>
+    <header>
+        <img class="logo" src="./assets/logo.png" alt="Logo del IFPSI">
+        <!-- Tuve que agregar contenido al css para que el logo se vea bien en la páginas ya que era muy grande y quedaba todo raro -->
+        <h1>Instituto de Formación Profesional San Isidro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="./pages/cursos.html">Cursos</a></li>
+                <li><a href="./pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="./pages/como-llegar.html">Como llegar</a></li>
+            </ul> 
+            <!-- Aclaración: si colocaba # en el href de la página sobre la que trabajaba, no me recargaba la página correspondiente. Por eso tuve que colocar la ruta completa de cada página. -->
+        </nav>
+    </header>
 
-    <!-- Subtítulo 1 con su párrafo -->
-    <h2>Curso de Personal Trainer</h2>
-    <p>Este curso está orientado al desarrollo de conocimientos y habilidades necesarias para planificar, adaptar y supervisar programas de entrenamiento físico. El curso brinda las herramientas para trabajar de manera responsable con personas de diferentes niveles y objetivos, comprendiendo los fundamentos del movimiento y del acondicionamiento físico, la correcta ejercución de los ejercicios y la planificación progresiva del entrenamiento. También se abordan aspectos relacionados con la evaluación física, la prevención de lesiones y el acompañamiento del alumno durante su proceso de entrenamiento.</p>
+    <main>
+        <h2>Formación profesional para transformar tu futuro</h2>
+        <p>En el Instituto de Formación Profesional San Isidro ofrecemos programas de capacitación orientadas al desarrollo de habilidades y conocimientos para el ámbito profesional.</p>
 
-    <!-- Lista 1 con clase aplicada -->
-     <!-- Modificar h3 -->
-     <h3>Contenido de  la cursada</h3>
-<ul class="contenidos">
-    <li>Anatomía</li>
-    <li>Fisiología</li>
-    <li>Técnicas de ejecución de ejercicios</li>
-    <li>Armado de rutinas</li>
-    <li>Principios básicos de entrenamiento y acondicionamiento físico</li>
-</ul>
+        <h3>Aprendé, desarrollá tus habilidades y preparate para nuevos desafíos </h3>
+        <p>Contamos con cursos de formación profesional pensados para quienes buscan incorporar nuevos conocimientos, mejorar sus competencias y ampliar sus oportunidades laborales.</p>
+        <div>
+            <img class="imagen-fachada" src="./assets/ifpsi-fachada.jpg" alt="Imagen de la fachada del Instituto de Formación Profesional San Isidro">
+        </div>
+    </main>
 
-<!-- Subtítulo 2 con su párrafo -->
-<h2>Curso de Instructor de Pilates</h2>
-<p>Formación orientada a la enseñanza y conducción de clases de pilates, proporcionando conocimientos y herramientas para planificar y desarrollar sesiones de manera segura, progresiva y adaptada a las necesidades y capacidades de cada persona. El curso aborda los principios fundamentales del método Pilates, el conocimiento del cuerpo y el movimiento, la correcta ejecución de los ejercicios y el uso adecuado de diferentes elementos. También se trabaja en la planificación de clases, la corrección postural y  técnica, la adaptación de ejercicios y el acompañamiento de los alumnos durante su proceso de entrenamiento.</p>
-
-<!-- Lista 2 con clase aplicada -->
- <!-- Editar h3 -->
- <h3>Contenido de la cursada</h3>
-<ul class="contenidos">
-    <li>Fundamentos y principios del método Pilates</li>
-    <li>Anatomía y fisiología aplicada</li>
-    <li>Conciencia corporal y control del movimiento</li>
-    <li>Postura y alineación corporal</li>  
-    <li>Respiración aplicada al método</li>
-    <li>Movilidad, flexibilidad y coordinación</li>
-    <li>Fortalecimiento y estabilidad del core</li>
-    <li>Técnica y ejecución de ejercicios</li>
-    <li>Uso de elementos y accesorios</li>
-    <li>Planificación y estructura de clases</li>
-    <li>Progresiones y adaptaciones de ejercicios</li>
-    <li>Corrección postural y técnica</li>
-    <li>Prevención de lesiones</li>
-    <li>Adaptación del entrenamiento a diferentes niveles</li>
-</ul>
-
-
+    <footer>
+        <p>Contacto: info@ifpsi.edu.ar</p>
+        <p>Teléfono: +54 11 1234-5678</p> 
+        <p>© 2026 IFPSI - Todos los derechos reservados</p>
+        <p>Institución fundada en 2006</p>
+       
+    </footer>
 </body>
-</html>
+</html> 
