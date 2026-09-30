@@ -4,16 +4,22 @@
 }
 
 :root {
-    --color-fondo: #A8C3A4;
+    --color-fondo-oscuro: #1D2D44;
+    --color-texto-claro: #EAF2F8;
     --color-secundario:#4D7A48;
 }
 
-.navbar {
+.navbar a{
     list-style: none;
     display: flex;
     gap: 1rem;
     display: flex;
     align-items: center;
+    color: var(--color-texto-claro);
+}
+
+.navbar ul {
+    list-style: none;
 }
 
 body {
@@ -27,9 +33,9 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0.6rem 1.25rem;
-    background-color: var(--color-fondo);
+    background-color: var(--color-fondo-oscuro);
     font-family: Arial, sans-serif;
-    color: var(--color-secundario);
+    color: var(--color-texto-claro);
 }
 
 .logo {
@@ -44,7 +50,7 @@ header {
 
 h1 {
     font-size: 2rem;
-    color: var(--color-secundario);
+    color: var(--color-texto-claro);
     margin: 0;
     text-align: center;
     line-height: 1.5;
