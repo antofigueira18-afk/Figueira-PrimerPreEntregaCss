@@ -1,5 +1,4 @@
 /* ===== BASES DE CSS ===== */
-/* ===== CAMBIOS EN INDEX Y CURSOS.HTML ===== */
 
 
 * {margin: 0;
@@ -11,17 +10,48 @@
     --color-fondo-oscuro: #1D2D44;
     --color-texto-claro: #EAF2F8;
     --color-secundario:#3E5C76;
+    --title-size: clamp(2rem, 3vw, 2.5rem);
+    --subtitle-size: clamp(1.5rem, 2.5vw, 2rem);
+    --h3-size: clamp(1rem, 2vw, 1.5rem);
+    --body-size: clamp(1rem, 1.5vw, 1.125rem);
+    --list-size: clamp(0.8rem, 1.4vw, 1rem);
+}
+
+/* TITULOS Y GENERALES*/
+
+h1 {
+    color: var(--color-texto-claro);
+    font-size: var(--title-size);    
+    padding: 1rem;
+
 }
 
 h2 {
     color: var(--color-secundario);
+    font-size: var(--subtitle-size);
+}
+
+
+h3{
+    font-size: var(--h3-size);
 }
 
 p {
-    line-height: 1.3;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: var(--body-size);
 }
+
+li {
+    font-size: var(--list-size);
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+
 
 /* ===== INDEX ===== */
 
@@ -30,42 +60,29 @@ p {
 
 header {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
+    gap: 0.5rem;
+    padding: 1.2rem;
     background-color: var(--color-fondo-oscuro);
-    font-family: 'Roboto', sans-serif;
     position: sticky;
     top: 0;
+    grid-area: header;
 }
 
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 /* ===== ELEMENTOS DEL HEADER ===== */
 
-
-/* .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-} */
-
-/* LOGO */
 
 .logo {
     width: 7rem;
 }
 
-/* TITULO */
-
-h1 {
-    color: var(--color-texto-claro);
-    font-size: 2rem;
-
-}
-
-h3{
-    font-size: 1.5rem;
-}
 
 /* BARRA DE NAVEGACION */
 
@@ -81,8 +98,8 @@ h3{
 nav ul {
     display: flex;
     list-style: none;
-    align-items: center;
-    gap: 1rem; 
+    justify-content: center;
+    gap: 1.5rem; 
     
 }
 
@@ -95,48 +112,61 @@ nav a {
 /* ===== FOOTER ===== */
 
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 1.5rem;
     background-color: var(--color-fondo-oscuro);
     color: var(--color-texto-claro);
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    padding: 2rem;
     font-family: 'Roboto', sans-serif;
+    grid-area: footer;
 }
 
 /* ===== BODY ===== */
 
+body {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+}
+
 /* ===== MAIN ===== */
 
 main {
-    padding: 48px;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     background-color: var(--color-texto-claro);
+    grid-area: main;
 
 }
 
 /* SECCION 1 INDEX */
 .presentacion {
     display: flex;
-    align-items: center;
-    gap: 8rem;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
 .presentacion div {
-    width: 50%;
+    width: 100%;
 }
 
 .presentacion figure {
-    width: 25%;
+    width: 100%;
 }
 
 .presentacion img {
     width: 100%;
-    border-radius: 3rem;
+    border-radius: 1rem;
+    height: auto;
+    display: block;
 }
 
 /* SECCION 2 INDEX*/
@@ -145,23 +175,14 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 2rem;
     margin-bottom: 2rem;
-}
-
-.nuestra-formacion div {
-    padding: 0 1rem;
 }
 
 
 .cursos-container {
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-    align-items: stretch;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 
 }
 
@@ -171,37 +192,37 @@ main {
    background-image: url(../assets/imagen/fondo-cards-index.png);
    background-size: cover;
    border-radius: 0.5rem;
-   width: 30%;
    
 
 }
 
 
 .enlaces-final-html {
-   padding: 0 48px;
+   padding: 1rem;
 }
 
 /* ===== PAGINA DE CURSOS ===== */
+
+/* Sección 1 cursos */
 
 .seccion-1-cursos{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    padding: 0 2rem;
+    padding: 1rem;
     margin-bottom: 2rem;
 
 }
 
 
 .cursos-generales{
-display: flex;
-flex-wrap: wrap;
-gap: 2rem;
+display: grid;
+grid-template-columns: 1fr;
+gap: 20px;
 }
 
 .cursos-generales article{
-    width: 100vw;
     border-radius: 12px;
     overflow: hidden;
     background-color: #1D2D44;
@@ -210,27 +231,124 @@ gap: 2rem;
     border: 5px solid var(--color-fondo-oscuro);
 }
 
-.cursos-generales div p{
-    font-size: small;
-}
-
 
 .cursos-generales img{
     width: 100%;
-    height: 200px;
+    height: 300px;
     border-radius: 0.5rem;
     object-fit: cover;
     display: block;
+    object-position: center 25%;
 }
 
-.formaciones-interes li{
-    list-style: none;
-}
+
+/* seccion 2 cursos */
 
 .seccion-2-cursos{
-    padding: 0 2rem;
+    padding: 1rem;
 }
 
+/* seccion 3 cursos */
+
 .seccion-3-cursos{
-    padding: 0 2rem;
+    padding: 1rem;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* MIN WIDTH 768px */
+
+
+@media (min-width: 768px) {
+    .cursos-container,
+    .cursos-generales {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 768px) {
+    main {
+        padding: 2.5rem;
+        gap: 3rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .presentacion {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .presentacion div {
+        flex: 3;
+        width: auto;
+        min-width: 0;
+    }
+
+    .presentacion figure {
+        flex: 2;
+        width: auto;
+        min-width: 0;
+    }
+
+     .presentacion img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .presentacion div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+}
+
+@media (min-width: 768px) {
+    header,
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}
+
+
+/* MIN WIDTH 1024px */
+
+@media (min-width: 1024px) {
+    .cursos-container,
+    .cursos-generales {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        padding: 3rem;
+        gap: 3.5rem;
+    }
+
+    .header-container {
+        gap: 10rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .presentacion {
+        gap: 3rem;
+    }
+
+    .presentacion div {
+        gap: 2rem;
+    }
+
+    .presentacion figure {
+        max-width: 400px;
+    }
 }
