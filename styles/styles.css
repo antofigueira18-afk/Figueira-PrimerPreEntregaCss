@@ -259,29 +259,22 @@ gap: 20px;
 
 /* seccion historia */
 
-.historia,
-.mision,
-.compromiso {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1.2rem;
+.container-nosotros img{
+    width: 100%;
+    height: 300px;
 }
 
-.historia figure,
-.mision figure,
-.compromiso figure {
-    width: 100%;
-    margin: 0;
+.container-nosotros h2{
+    padding-left: 3rem;
 }
 
-.historia img,
-.mision img,
-.compromiso img {
-    display: block;
-    width: 100%;
-    height: auto;
+.columna-historia,
+.columna-mision,
+.columna-compromiso {
+    border: 2px solid var(--color-fondo-oscuro);
 }
+
+
 
 
 
