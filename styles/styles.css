@@ -55,8 +55,6 @@ ul {
 
 
 
-/* ===== INDEX ===== */
-
 /* ===== HEADER ===== */
 
 
@@ -148,6 +146,7 @@ main {
 
 }
 
+/* ===== INDEX ===== */
 /* SECCION 1 INDEX */
 .presentacion {
     display: flex;
