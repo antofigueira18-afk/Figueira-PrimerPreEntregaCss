@@ -10,22 +10,40 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <figure>
-                <a href="../index.html">
-                    <img class="logo" src="../assets/imagen/logo-claro.png" alt="Logo del Instituto de Formación Profesional San Isidro">
-                </a>
-            </figure>
-            <h1>Instituto de Formación Profesional San Isidro</h1>
-        </div>
         <nav class="navbar">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="./cursos.html">Cursos</a></li>
-                <li><a href="./preguntas-frecuentes.html">Preguntas frecuentes</a></li>
-                <li><a href="./como-llegar.html">Como llegar</a></li>
-            </ul> 
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../assets/imagen/logo-claro.png" alt="Logo de IFPSI">
+                </a>
+
+                <div>
+                <h1>Instituto de Formacion Profesional San Isidro</h1>
+                </div>
+
+                <button class="navbar-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./como-llegar.html">Como llegar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 

@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto de Formacion Profesional San Isidro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
 
 </head>
+
 <body>
     <header>
-        <div class="header-container">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../assets/imagen/logo-claro.png" alt="Logo de IFPSI">
+                </a>
+
+                <div>
+                <h1>Instituto de Formacion Profesional San Isidro</h1>
+                </div>
+
+                <button class="navbar-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./preguntas-frecuentes.html">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./como-llegar.html">Como llegar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="header-container">
             <figure>
                 <a href="../index.html">
                     <img class="logo" src="../assets/imagen/logo-claro.png" alt="Logo del Instituto de Formación Profesional San Isidro">
@@ -26,56 +64,70 @@
                 <li><a href="./preguntas-frecuentes.html">Preguntas frecuentes</a></li>
                 <li><a href="./como-llegar.html">Como llegar</a></li>
             </ul> 
-        </nav>
+        </nav> -->
     </header>
 
     <main>
-        
+
         <section class="container-nosotros">
-            
+
             <h2>Sobre nosotros</h2>
-    
+
             <div class="row mx-5 bg-primary-subtle">
-                
-                <div class="col-12 col-lg-4 columna-historia"> 
+
+                <div class="col-12 col-lg-4 columna-historia">
                     <h3>Nuestra historia</h3>
-                    <p>El Instituto de Formación Profesional San Isidro nació en 2006 a partir del sueño de una familia de deportistas que encontró en la enseñanza una nueva forma de compartir sus conocimientos y experiencias.</p>
-                    <p>Con el paso de los años, IFPSI fue ampliando sus propuestas educativas, manteniendo siempre su compromiso con el deporte, la formación profesional y el desarrollo de nuevas generaciones.</p>
+                    <p>El Instituto de Formación Profesional San Isidro nació en 2006 a partir del sueño de una familia
+                        de deportistas que encontró en la enseñanza una nueva forma de compartir sus conocimientos y
+                        experiencias.</p>
+                    <p>Con el paso de los años, IFPSI fue ampliando sus propuestas educativas, manteniendo siempre su
+                        compromiso con el deporte, la formación profesional y el desarrollo de nuevas generaciones.</p>
                     <figure>
-                        <img src="../assets/imagen/historia-img.jpg" alt="Los 3 hijos del fundador del Instituto, en pose dentro del mismo">
+                        <img src="../assets/imagen/historia-img.jpg"
+                            alt="Los 3 hijos del fundador del Instituto, en pose dentro del mismo">
                     </figure>
                 </div>
 
                 <div class="col-12 col-lg-4 columna-mision">
                     <h3>Nuestra misión</h3>
-                    <p>Nuestra misión es brindar una formación profesional de calidad vinculada con la actividad física, el deporte y el bienestar, ofreciendo herramientas teóricas y prácticas para el desarrollo de cada estudiante.</p>
-                    <p>Buscamos promover el aprendizaje, la responsabilidad y los hábitos saludables, preparando a nuestros alumnos para aplicar sus conocimientos de manera consciente y profesional.</p>
+                    <p>Nuestra misión es brindar una formación profesional de calidad vinculada con la actividad física,
+                        el deporte y el bienestar, ofreciendo herramientas teóricas y prácticas para el desarrollo de
+                        cada estudiante.</p>
+                    <p>Buscamos promover el aprendizaje, la responsabilidad y los hábitos saludables, preparando a
+                        nuestros alumnos para aplicar sus conocimientos de manera consciente y profesional.</p>
                     <figure>
-                        <img src="../assets/imagen/mision-img.jpg" alt="Profesor enseñando a su alumna del Instituto un ejercicio práctico">
+                        <img src="../assets/imagen/mision-img.jpg"
+                            alt="Profesor enseñando a su alumna del Instituto un ejercicio práctico">
                     </figure>
                 </div>
-        
+
 
                 <div class="col-12 col-lg-4 columna-compromiso">
                     <h3>Nuestro compromiso</h3>
-                    <p>En IFPSI reconocemos que cada estudiante tiene sus propios objetivos y tiempos de aprendizaje. Por eso, buscamos ofrecer un entorno respetuoso y motivador que favorezca el crecimiento personal y profesional.</p>
-                    <p>Nos comprometemos a fomentar la participación, el trabajo en equipo y la aplicación práctica de los conocimientos, acompañando a nuestros estudiantes.</p>
+                    <p>En IFPSI reconocemos que cada estudiante tiene sus propios objetivos y tiempos de aprendizaje.
+                        Por eso, buscamos ofrecer un entorno respetuoso y motivador que favorezca el crecimiento
+                        personal y profesional.</p>
+                    <p>Nos comprometemos a fomentar la participación, el trabajo en equipo y la aplicación práctica de
+                        los conocimientos, acompañando a nuestros estudiantes.</p>
                     <figure>
-                        <img src="../assets/imagen/compromiso-img.jpg" alt="Nuestros alumnos en el aula en clase teórica">
+                        <img src="../assets/imagen/compromiso-img.jpg"
+                            alt="Nuestros alumnos en el aula en clase teórica">
                     </figure>
                 </div>
             </div>
         </section>
-    
+
     </main>
-    
+
     <footer>
         <p>Contacto: info@ifpsi.edu.ar</p>
         <p>Teléfono: +54 11 1234-5678</p>
         <p>© 2026 IFPSI - Todos los derechos reservados</p>
         <p>Institución fundada en 2006</p>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
