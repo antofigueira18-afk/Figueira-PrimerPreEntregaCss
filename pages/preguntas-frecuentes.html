@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto de Formacion Profesional San Isidro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
 
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                <img class="logo" src="../assets/imagen/logo-claro.png" alt="Logo de IFPSI">
+                    <img class="logo" src="../assets/imagen/logo-claro.png" alt="Logo de IFPSI">
                 </a>
 
                 <div>
-                <h1>Instituto de Formacion Profesional San Isidro</h1>
+                    <h1>Instituto de Formacion Profesional San Isidro</h1>
                 </div>
 
                 <button class="navbar-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -49,25 +52,79 @@
 
     <main>
         <h2>Preguntas frecuentes</h2>
-        <h3>¿Necesito experiencia previa para realizar un curso?</h3>
-        <p> No es necesario contar con experiencia previa. Nuestros cursos están pensados para brindar una formación progresiva y acompañar a los estudiantes durante todo el proceso de aprendizaje.</p>
-        <h3>¿Qué cursos ofrece IFPSI?</h3>
-        <p> Actualmente contamos con propuestas de formación en Personal Trainer, Pilates y Yoga.</p>
-        <h3>¿Cuánto duran los cursos?</h3>
-        <p>  La duración depende de cada propuesta de formación. Podés consultar la información específica de cada curso para conocer su duración, contenidos y modalidad de cursada a través de nuestros canales de contacto.</p>
-        <h3>¿La cursada es presencial?</h3>
-        <p>  Sí. Las clases se desarrollan de manera presencial en nuestra sede de San Isidro, donde los estudiantes pueden combinar contenidos teóricos con actividades prácticas.</p>
-        <h3>¿Se entrega un certificado al finalizar?</h3>
-        <p> Sí. Al completar los requisitos correspondientes de cada formación, los estudiantes reciben un certificado de finalización del curso.</p>
-        <h3>¿Cómo puedo inscribirme?</h3>
-        <p>   Para realizar una inscripción podés comunicarte con el instituto y consultar las fechas disponibles, requisitos y pasos necesarios para comenzar la cursada.</p>
 
-    <footer>
-        <p>Contacto: info@ifpsi.edu.ar</p>
-        <p>Teléfono: +54 11 1234-5678</p>
-        <p>© 2026 IFPSI - Todos los derechos reservados</p>
-        <p>Institución fundada en 2006</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <details>
+            <summary>¿Necesito experiencia previa para realizar un curso?</summary>
+            <p>No es necesario contar con experiencia previa. Nuestros cursos están pensados para brindar una formación
+                progresiva y acompañar a los estudiantes durante todo el proceso de aprendizaje.</p>
+        </details>
+
+        <details>
+            <summary>¿Qué cursos ofrece IFPSI?</summary>
+            <p>Actualmente contamos con propuestas de formación en Personal Trainer, Pilates y Spinning, Crossfit, Calistenia, Boxeo.</p>
+        </details>
+
+        <details>
+            <summary>¿Cuánto duran los cursos?</summary>
+            <p>La duración depende de cada propuesta de formación. Podés consultar la información específica de cada
+                curso
+                para conocer su duración, contenidos y modalidad de cursada a través de nuestros canales de contacto.
+            </p>
+        </details>
+
+        <details>
+            <summary>¿La cursada es presencial?</summary>
+            <p>Sí. Las clases se desarrollan de manera presencial en nuestra sede de San Isidro, donde los estudiantes
+                pueden combinar contenidos teóricos con actividades prácticas.</p>
+        </details>
+
+        <details>
+            <summary>¿Se entrega un certificado al finalizar?</summary>
+            <p>Sí. Al completar los requisitos correspondientes de cada formación, los estudiantes reciben un
+                certificado
+                de finalización del curso.</p>
+        </details>
+
+        <details>
+            <summary>¿Cómo puedo inscribirme?</summary>
+            <p>Para realizar una inscripción podés comunicarte con el instituto y consultar las fechas disponibles,
+                requisitos y pasos necesarios para comenzar la cursada.</p>
+        </details>
+
+
+
+        <section class="consulta">
+            <h2>¿Tu duda no está entre nuestras preguntas frecuentes?</h2>
+            <p>Si necesitás más información sobre nuestros cursos, modalidades de cursada o inscripciones, envianos tu
+                consulta. ¡Estamos para ayudarte!</p>
+
+            <form>
+                <label for="nombre-cliente">Ingrese su nombre completo</label>
+                <input id="nombre-cliente" type="text" placeholder="Ej: Ramiro Díaz" required minlength="4">
+
+                <label for="telefono-cliente">Ingrese su número de teléfono</label>
+                <input id="telefono-cliente" type="number" placeholder="Ej: 11-7835-9903" required min="1000000000">
+
+                <label for="email-cliente">Ingrese su mail de contacto</label>
+                <input id="email-cliente" type="email" placeholder="Ej: Ramirodiaz@gmail.com" required minlength="8">
+
+                <label for="consulta-cliente">Adjunte el motivo de su consulta</label>
+                <textarea name="consulta" id="consulta-cliente" required minlength="8"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+        </section>
+
+        <footer>
+            <p>Contacto: info@ifpsi.edu.ar</p>
+            <p>Teléfono: +54 11 1234-5678</p>
+            <p>© 2026 IFPSI - Todos los derechos reservados</p>
+            <p>Institución fundada en 2006</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
 </body>
+
 </html>

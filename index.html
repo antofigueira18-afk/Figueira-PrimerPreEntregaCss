@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
+                <a class="navbar-brand" href="#">
                     <img class="logo" src="./assets/imagen/logo-claro.png" alt="Logo de IFPSI">
                 </a>
 
@@ -75,6 +75,76 @@
             </figure>
         </section>
 
+        <section class="galeria">
+            <h2>Galería</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6 col-2xl-4">
+                        <div id="carouselGaleria" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner rounded-5">
+                                <div class="carousel-item active" data-bs-interval="2000">
+                                    <img src="./assets/imagen/galeria-index-1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="4000">
+                                    <img src="./assets/imagen/galeria-index-2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="6000">
+                                    <img src="./assets/imagen/galeria-index-3.jpg" class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item" data-bs-interval="6000">
+                                    <img src="./assets/imagen/galeria-index-4.jpg" class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item" data-bs-interval="6000">
+                                    <img src="./assets/imagen/galeria-index-5.jpg" class="d-block w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item" data-bs-interval="6000">
+                                    <img src="./assets/imagen/galeria-index-6.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+
+
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="4"
+                                        aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="5"
+                                        aria-label="Slide 6"></button>
+                                </div>
+                                <button class="btn-icon btn-sm carousel-control-play-pause" type="button"
+                                    data-bs-target="#carouselGaleria" aria-label="Pause" data-bs-pause-label="Pause"
+                                    data-bs-play-label="Play">
+                                    <span class="carousel-icon-pause" aria-hidden="true"></span>
+                                    <span class="carousel-icon-play" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
 
         <section class="nuestra-formacion">
             <div>
@@ -86,46 +156,56 @@
             <div class="cursos-container">
 
                 <article>
-                    <h3>Personal Trainer</h3>
-                    <p>Formación orientada al entrenamiento y la planificación de rutinas adaptadas a diferentes
-                        objetivos.</p>
+                    <a href="./pages/cursos.html" class="curso-link">
+                        <h3>Personal Trainer</h3>
+                        <p>Formación orientada al entrenamiento y la planificación de rutinas...</p>
+                    </a>
                 </article>
 
                 <article>
-                    <h3>Pilates</h3>
-                    <p>Propuesta centrada en el control corporal, la postura, la movilidad y el movimiento consciente.
-                    </p>
+                    <a href="./pages/cursos.html" class="curso-link">
+                        <h3>Pilates</h3>
+                        <p>Propuesta centrada en el control corporal, la postura, la movilidad y el movimiento
+                            consciente.</p>
+                    </a>
                 </article>
 
                 <article>
-                    <h3>Calistenia</h3>
-                    <p>Disciplica basada principalmente en ejercicios con el propio peso corporal, orientada al
-                        desarrollo de fuerza, coordinación, movilidad y control del cuerpo.</p>
+                    <a href="./pages/cursos.html" class="curso-link">
+                        <h3>Calistenia</h3>
+                        <p>Disciplina basada principalmente en ejercicios con el propio peso corporal, orientada al
+                            desarrollo de fuerza, coordinación, movilidad y control del cuerpo.</p>
+                    </a>
                 </article>
 
                 <article>
-                    <h3>Spinning</h3>
-                    <p>Actividad de entrenamiento cardiovascular sobre bicicleta estática, con diferentes niveles de
-                        intensidad.</p>
+                    <a href="./pages/cursos.html" class="curso-link">
+                        <h3>Spinning</h3>
+                        <p>Actividad de entrenamiento cardiovascular sobre bicicleta estática, con diferentes niveles de
+                            intensidad.</p>
+                    </a>
                 </article>
 
                 <article>
-                    <h3>Boxeo</h3>
-                    <p>Formación orientada al aprendizaje de técnicas básicas de boxeo, coordinación, desplazamientos y
-                        acondicionamiento físico.</p>
+                    <a href="./pages/cursos.html" class="curso-link">
+                        <h3>Boxeo</h3>
+                        <p>Formación orientada al aprendizaje de técnicas básicas de boxeo, coordinación,
+                            desplazamientos y acondicionamiento físico.</p>
+                    </a>
                 </article>
 
                 <article>
-                    <h3>Crossfit</h3>
-                    <p>Entrenamiento de alta intensidad que combina ejercicios para desarrollar fuerza, resistencia,
-                        coordinación y capacidad física.</p>
+                    <a href="./pages/cursos.html" class="curso-link">
+                        <h3>Crossfit</h3>
+                        <p>Entrenamiento de alta intensidad que combina ejercicios para desarrollar fuerza, resistencia,
+                            coordinación y capacidad física.</p>
+                    </a>
                 </article>
-
             </div>
 
         </section>
 
-        <section class="enlaces-final-html">
+        <section class="enlaces-finales">
             <h2>Encontrá tu próxima formación</h2>
 
             <p>Conocé en detalle cada propuesta, sus contenidos, modalidad y características.</p>
