@@ -10,6 +10,7 @@
     --color-fondo-oscuro: #1D2D44;
     --color-texto-claro: #EAF2F8;
     --color-secundario:#3E5C76;
+    --color-h3: #6485A3;
     --color-hover:#8AA9C4;
     --title-size: clamp(1.2rem, 3vw, 2rem);
     --subtitle-size: clamp(1.1rem, 2.5vw, 1.8rem);
@@ -36,6 +37,7 @@ h2 {
 
 h3{
     font-size: var(--h3-size);
+    color: var(--color-h3);
     margin-bottom: 0.5rem;
 }
 
@@ -54,19 +56,17 @@ ul {
     padding-left: 1.2rem;
 } 
 
-.enlaces-finales {
-   padding: 1rem;
-   transition: font-size 0.3s ease;
-}
 
+.enlaces-finales a{
+    transition: font-size 0.5s ease;
+}
 
 .enlaces-finales a:visited{
     color:#3E5C76;
 }
 
-.enlaces-finales:hover{
+.enlaces-finales a:hover{
     font-size: 1.2rem;
-
 }
 
 
@@ -80,10 +80,11 @@ header {
 }  
 
 .nav-link{
-    color: #EAF2F8;
+    color: var(--color-texto-claro);
     transition: color 0.4s ease;
 
 }
+
 
 .nav-link:hover{
     color: var(--color-hover);
@@ -92,6 +93,24 @@ header {
 
 .logo {
     width: 7rem;
+}
+
+.logo:hover{
+animation: latido 1.5s ease-in-out 2;
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 
@@ -119,6 +138,30 @@ body {
     "footer";
     grid-template-columns: 1fr;
 }
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    position: static;
+    padding: 1.2rem;
+
+}
+
+.redes-sociales img{
+    transition: transform 0.5s ease-in-out;
+}
+
+.redes-sociales img:hover{
+    transform: rotate(10deg);
+}
+
+.redes-sociales img {
+    width: 50px;
+}
+
+
 
 /* ===== MAIN ===== */
 
@@ -179,13 +222,15 @@ main {
    background-image: url(../assets/imagen/fondo-cards-index.png);
    background-size: cover;
    border-radius: 0.5rem;
-   transition: scale 0.5s ease;
-   
+   transition: transform 0.5s ease;
+}
 
+.cursos-container article:hover {
+    transform: translateY(3px)
 }
 
 .cursos-container article:active {
-    transform: scale(0.98);
+    transform: scale(0.95);
 }
 
 .curso-link {
@@ -218,11 +263,47 @@ gap: 20px;
 .cursos-generales article{
     border-radius: 12px;
     overflow: hidden;
-    background-color: #1D2D44;
-    color: white;
+    color: var(--color-texto-claro);
     text-align: justify;
     border: 5px solid var(--color-fondo-oscuro);
+    background: linear-gradient(
+    120deg, 
+    var(--color-fondo-oscuro),
+    var(--color-secundario),
+    var(--color-hover),
+    var(--color-fondo-oscuro)
+);
+background-size: 300% 300%;
+animation: gradiente 8s ease infinite;
 }
+
+@keyframes gradiente {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.cursos-generales article h3{
+    color: var(--color-fondo-oscuro);
+}
+
+.cursos-generales article p{
+    color: var(--color-fondo-oscuro);
+}
+
+.cursos-generales article div{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 
 
 .cursos-generales img{
@@ -243,7 +324,37 @@ gap: 20px;
 
 /* seccion 3 cursos */
 
-.seccion-3-cursos{
+.seccion-3-cursos {
+    padding: 1.2rem;
+}
+
+.seccion-3-cursos {
+    display: none;
+}
+
+.tabla-cursos {
+    width: 80vw
+}
+
+.tabla-cursos thead th {
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto-claro);
+    padding: 1rem;
+}
+
+.tabla-cursos th,
+.tabla-cursos td {
+    padding: 1rem;
+    border: 1px solid var(--color-hover);
+}
+
+.tabla-cursos tbody tr:hover {
+    background-color: #D5E5F2;
+}
+
+/* seccion 4 cursos */
+
+.seccion-4-cursos{
     padding: 1rem;
 }
 
@@ -264,6 +375,32 @@ gap: 20px;
 .columna-mision,
 .columna-compromiso {
     border: 2px solid var(--color-fondo-oscuro);
+}
+
+.container-nosotros .row {
+    animation: aparecer 1s ease both;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(7px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* seccion horarios de atencion */
+
+.horarios-atencion {
+    padding-left: 3rem;
 }
 
 /* ===== PÁGINA PREGUNTAS FRECUENTES ===== */
@@ -337,14 +474,14 @@ details p{
 
 
 
-
-
-
-
-
 /* ===== MEDIA QUERIES ===== */
 
 /* MIN WIDTH 768px */
+@media (min-width: 768px) {
+    .navbar-nav {
+        text-align: end;
+    }
+}
 
 
 @media (min-width: 768px) {
@@ -442,6 +579,18 @@ details p{
     }
 }
 
+/* media queries cursos */
+
+@media (min-width: 768px) {
+    .seccion-3-cursos {
+        display: block;
+    }
+}
+
+/* @media (min-width:768px) {
+
+} */
+
 /* media queries de sobre-nosotros */
 
 
@@ -477,3 +626,22 @@ details p{
         object-fit: cover;
     }
 }
+
+/* media query como llegar */
+
+.ubicacion iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
