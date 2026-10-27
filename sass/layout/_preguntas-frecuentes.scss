@@ -1,0 +1,65 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixin" as m;
+
+.preguntas{
+    details{
+        summary{
+            font-size: v.$h3-size;
+            margin-bottom: 0.5rem;
+            color: v.$color-secundario;
+            &:focus{
+                outline: 2px solid v.$color-fondo-oscuro;
+            }
+        }
+        p{
+            font-size: v.$body-size;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            color: v.$color-hover;
+        }
+    }
+}
+
+.consulta{
+    background-color: v.$color-secundario;
+    color: v.$color-texto-claro;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 900px;
+    h2{
+        color: v.$color-texto-claro;
+    }
+    form{
+        label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input,
+        textarea{
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid v.$color-fondo-oscuro;
+            border-radius: 8px;
+            box-sizing: border-box;
+            &:focus{
+                outline: 2px solid v.$color-fondo-oscuro;
+                outline-offset: 2px;
+            }
+        }
+        button{
+            background-color: v.$color-fondo-oscuro;
+            color: v.$color-texto-claro;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.4s ease-in-out;
+            &:hover {
+                background-color: v.$color-hover;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@use "./utilities/reset";
+
+@use "./components/header";
+@use "./components/footer";
+
+@use "./layout/index";
+@use "./layout/sobre-nosotros";
+@use "./layout/cursos";
+@use "./layout/preguntas-frecuentes";
+@use "./layout/como-llegar";
+
+@use "./utilities/accesibilidad";
+
+
+

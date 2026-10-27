@@ -1,0 +1,73 @@
+@use "variables" as v;
+@use "mixin" as m;
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    main {
+        @include m.flex-red(column, start, stretch);
+        gap: 2rem;
+        background-color: var(--color-texto-claro);
+        padding: 1.5rem;
+        grid-area: main;
+        @include m.tablet{
+            padding: 2.5rem;
+            gap: 3rem;
+        }
+        @include m.desktop{
+            padding: 3rem;
+            gap: 3.5rem;
+        }
+    }
+    h1{
+        color: v.$color-texto-claro;
+        font-size: v.$title-size;    
+        padding: 1rem;
+    }
+    h2{
+        color: v.$color-h3;
+        font-size: v.$subtitle-size;
+        margin-bottom: 1rem;
+    }
+    h3{
+        font-size: v.$h3-size;
+        color: v.$color-h3;
+        margin-bottom: 0.5rem;
+    }
+    p{
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        font-size: v.$body-size;
+    }
+    li{
+        font-size: v.$list-size;
+    }
+    ul{
+        padding-left: 1.2rem;
+    }
+    .enlaces-finales a{ 
+        display: inline-block;
+        transition: transform 300ms ease;
+        margin: 0.5rem;
+        margin-left: 0px;
+        &:visited {
+            color: v.$color-secundario;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+

@@ -1,0 +1,53 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixin" as m;
+
+.container-nosotros {
+  h2 {
+    padding-left: 3rem;
+  }
+  .container-columnas {
+    animation: aparecer 500ms ease both;
+    .columna-historia,
+    .columna-mision,
+    .columna-compromiso {
+      border: 2px solid v.$color-fondo-oscuro;
+      figure {
+        img {
+          width: 100%;
+          height: 300px;
+          @include m.desktop {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        @include m.desktop {
+          flex: 2;
+          min-width: 0;
+          aspect-ratio: 4 / 3;
+        }
+      }
+    }
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateY(7px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.horarios-atencion {
+  padding-left: 3rem;
+}

@@ -1,0 +1,11 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixin" as m;
+
+.ubicacion {
+  iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+  }
+}

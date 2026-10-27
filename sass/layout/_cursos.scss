@@ -1,0 +1,110 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixin" as m;
+
+.seccion-1-cursos {
+  @include m.flex-red(column, center, stretch);
+  gap: 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  .cursos-generales {
+    @include m.grid-red(1fr);
+    gap: 20px;
+    article {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      border-radius: 12px;
+      color: v.$color-texto-claro;
+      text-align: justify;
+      border: 5px solid v.$color-fondo-oscuro;
+      background: v.$color-fondo-oscuro;
+      &::before {
+        content: "";
+        position: absolute;
+        inset: -50%;
+        background: linear-gradient(
+          120deg,
+          v.$color-fondo-oscuro,
+          v.$color-secundario,
+          v.$color-hover,
+          v.$color-fondo-oscuro
+        );
+        z-index: -1;
+        pointer-events: none;
+        animation: gradiente 4s ease-in-out infinite alternate;
+      }
+      div {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        h3,
+        p {
+          color: v.$color-fondo-oscuro;
+        }
+      }
+      figure {
+        img {
+          width: 100%;
+          height: 300px;
+          border-radius: 0.5rem;
+          object-fit: cover;
+          display: block;
+          object-position: center 25%;
+        }
+      }
+    }
+    @include m.tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include m.desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@keyframes gradiente {
+  0% {
+    transform: translate(-20%, -15%);
+  }
+
+  100% {
+    transform: translate(20%, 15%);
+  }
+}
+
+.seccion-2-cursos {
+  padding: 1rem;
+}
+.seccion-3-cursos {
+  display: none;
+  padding: 1.2rem;
+  .tabla-cursos {
+    width: 80vw;
+    thead {
+      tr {
+        th {
+          background-color: v.$color-fondo-oscuro;
+          color: v.$color-texto-claro;
+          padding: 1rem;
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:hover {
+          background-color: v.$color-background-tabla;
+        }
+        th,
+        td {
+          padding: 1rem;
+          border: 1px solid v.$color-hover;
+        }
+      }
+    }
+  }
+  @include m.tablet {
+    display: block;
+  }
+}
+.seccion-4-cursos {
+  padding: 1rem;
+}

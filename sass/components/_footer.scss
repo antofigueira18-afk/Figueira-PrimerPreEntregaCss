@@ -1,0 +1,17 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixin" as m;
+
+footer{
+    @include m.flex-red(column, center, center);
+    gap: 0.2rem;
+    padding: 1.5rem;
+    background-color: v.$color-fondo-oscuro;
+    color: v.$color-texto-claro;
+    font-family: v.$tipografia-general;
+    grid-area: footer;
+    @include m.tablet {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

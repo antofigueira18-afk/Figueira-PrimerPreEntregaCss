@@ -1,0 +1,39 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixin" as m;
+
+
+header{
+    background-color: v.$color-fondo-oscuro;
+    .logo{
+        width: 7rem;
+        &:hover{
+            animation: latido 1.5s ease-in-out 2;
+        }
+    }
+    .nav-link{
+        color: v.$color-texto-claro;
+        transition: color 0.4s ease;
+        &:hover{
+        color: v.$color-hover;
+        }
+    }
+    @include m.tablet{
+        .navbar-nav{
+            text-align: end;
+        }
+    }
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
