@@ -1,0 +1,15 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixin" as m;
+
+.enlaces-finales a {
+  display: inline-block;
+  transition: transform 300ms ease;
+  margin: 0.5rem;
+  margin-left: 0px;
+  &:visited {
+    color: v.$color-secundario;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}

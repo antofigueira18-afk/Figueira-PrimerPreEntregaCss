@@ -1,13 +1,17 @@
 @use "./utilities/reset";
 
-@use "./components/header";
-@use "./components/footer";
+@use "./components/enlaces";
 
+@use "../base/base";
+@use "../base/tipografia";
+
+@use "./layout/header";
 @use "./layout/index";
 @use "./layout/sobre-nosotros";
 @use "./layout/cursos";
 @use "./layout/preguntas-frecuentes";
 @use "./layout/como-llegar";
+@use "./layout/footer";
 
 @use "./utilities/accesibilidad";
 
