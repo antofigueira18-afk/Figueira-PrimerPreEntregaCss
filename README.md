@@ -49,4 +49,4 @@ Proyecto desarrollado por Antonella Figueira como parte de la Diplomatura Full S
 
 ## Estado del proyecto
 
-Proyecto académico a la espera de la evaluacion final.
+Proyecto académico a la espera de la evaluación final.
